@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compra frutas frescas y de temporada en Mercado Verde.">
+  <title>Mercado Verde | Frutas frescas</title>
+  <link rel="icon" href="Imagen/cherries.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#">🍃 Mercado<b>Verde</b></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#productos">Frutas</a>
+      <a href="#beneficios">Sobre nosotros</a>
+    </nav>
+    <a class="cart-link" href="#carrito">
+      🛒 Carrito <span class="count" id="count">0</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESCO, NATURAL Y DEL DÍA</p>
+        <h1>Un poco de fruta.<br><span>Mucho bienestar.</span></h1>
+        <p>Frutas seleccionadas con cuidado y listas para disfrutar.</p>
+        <a class="primary" href="#productos">Ver productos</a>
+      </div>
+      <div class="hero-fruit">
+        <img
+          src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="Selección colorida de frutas frescas">
+      </div>
+    </section>
+
+    <section class="layout" id="productos">
+      <div>
+        <div class="heading">
+          <div>
+            <p class="eyebrow">NUESTRA SELECCIÓN</p>
+            <h2>Frutas frescas</h2>
+          </div>
+          <span class="note">Precios por kilo</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="art">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Orange_--_2022_--_9711.jpg/960px-Orange_--_2022_--_9711.jpg" alt="Naranjas frescas" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">Cítricos</span>
+              <h3>Naranjas</h3>
+              <p class="desc">Dulces y llenas de jugo.</p>
+              <div class="bottom">
+                <strong class="price">$2.50 <small>/ kg</small></strong>
+                <button class="add" data-id="naranjas" data-name="Naranjas" data-price="2.50" data-emoji="🍊">Añadir +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="art">
+              <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Fresas frescas" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">Frutos rojos</span>
+              <h3>Fresas</h3>
+              <p class="desc">Frescas, suaves y deliciosas.</p>
+              <div class="bottom">
+                <strong class="price">$4.20 <small>/ kg</small></strong>
+                <button class="add" data-id="fresas" data-name="Fresas" data-price="4.20" data-emoji="🍓">Añadir +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="art">
+              <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Plátanos maduros" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">Tropicales</span>
+              <h3>Plátanos</h3>
+              <p class="desc">Energía natural para tu día.</p>
+              <div class="bottom">
+                <strong class="price">$1.80 <small>/ kg</small></strong>
+                <button class="add" data-id="platanos" data-name="Plátanos" data-price="1.80" data-emoji="🍌">Añadir +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="art">
+              <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Racimos de uvas" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">De temporada</span>
+              <h3>Uvas</h3>
+              <p class="desc">Pequeñas, dulces y sin semillas.</p>
+              <div class="bottom">
+                <strong class="price">$3.60 <small>/ kg</small></strong>
+                <button class="add" data-id="uvas" data-name="Uvas" data-price="3.60" data-emoji="🍇">Añadir +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="art">
+              <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Manzanas rojas frescas" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">Favoritas</span>
+              <h3>Manzanas</h3>
+              <p class="desc">Crujientes y recién cosechadas.</p>
+              <div class="bottom">
+                <strong class="price">$2.90 <small>/ kg</small></strong>
+                <button class="add" data-id="manzanas" data-name="Manzanas" data-price="2.90" data-emoji="🍎">Añadir +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="art">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Slices_of_watermelon.jpg/960px-Slices_of_watermelon.jpg" alt="Rodajas de sandía fresca" loading="lazy">
+            </div>
+            <div class="info">
+              <span class="tag">De temporada</span>
+              <h3>Sandía</h3>
+              <p class="desc">Refrescante y perfecta para compartir.</p>
+              <div class="bottom">
+                <strong class="price">$1.50 <small>/ kg</small></strong>
+                <button class="add" data-id="sandia" data-name="Sandía" data-price="1.50" data-emoji="🍉">Añadir +</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="panel" id="carrito" aria-labelledby="cart-title">
+        <div class="cart-heading">
+          <div>
+            <p class="eyebrow">TU SELECCIÓN</p>
+            <h2 id="cart-title">Tu carrito</h2>
+          </div>
+          <span aria-hidden="true">🛒</span>
+        </div>
+        <p class="empty" id="empty">Todavía no has añadido productos.</p>
+        <ul class="items" id="items" aria-live="polite"></ul>
+        <div class="total"><span>Total</span><strong id="total">$0.00</strong></div>
+        <button class="checkout" id="checkout" disabled>Continuar compra</button>
+        <p class="hint">Los gastos de envío se calculan al finalizar.</p>
+      </aside>
+    </section>
+
+    <section class="benefits" id="beneficios">
+      <div class="benefit">
+        <span aria-hidden="true">🌱</span>
+        <strong>Productos frescos</strong>
+        <p>Seleccionados cada día.</p>
+      </div>
+      <div class="benefit">
+        <span aria-hidden="true">🚚</span>
+        <strong>Entrega sencilla</strong>
+        <p>Del mercado a tu casa.</p>
+      </div>
+      <div class="benefit">
+        <span aria-hidden="true">💚</span>
+        <strong>Compra consciente</strong>
+        <p>Bueno para ti y para el planeta.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#">🍃 Mercado<b>Verde</b></a>
+    <span>Fruta fresca, todos los días.</span>
+  </footer>
+</body>
+</html>
